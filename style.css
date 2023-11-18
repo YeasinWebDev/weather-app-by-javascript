@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d5d4d4;
+}
+.cityName{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color:rgb(12, 122, 122) ;
+}
+.container{
+    width: 480px;
+    height: min-content;
+    border-radius: 12px;
+    background-color: #fff;
+    padding: 15px;
+}
+
+.searchBox{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input{
+    width: 84%;
+    font-size: 20px;
+    background-color: rgba(33, 173, 173, 0.451);
+    padding: 20px;
+    border-radius:12px ;
+}
+
+.searchBox input::placeholder{
+    color: #000;
+}
+
+.search{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: rgba(33, 173, 173, 0.451);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search:active{
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.412);
+}
+
+/* weather body */
+
+.weatherBody{
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-block: 20px;
+}
+.weather-img{
+    width: 60%;
+}
+
+.weather-box{
+    margin-block: 20px;
+    text-align: center;
+}
+
+.temperature{
+    position: relative;
+    font-size: 40px;
+    font-weight: 750;
+}
+
+.temperature sup{
+    position: absolute;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.description{
+    font-size:20px;
+    font-weight: 600;
+}
+
+.weather-details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 0px 20px;
+}
+
+.humidity-det, .wind{
+    display: flex;
+    align-items: center;
+}
+
+.weather-details i{
+    font-size: 36px;
+}
+
+.weather-details .text{
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.text span{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.not-found{
+    display: none;
+    margin-top: 40px;
+    margin-left: 100px;
+}
+
+.not-found h1{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.not-found img{
+    width: 80%;
+}
